@@ -29,8 +29,8 @@ public class UserController {
 		try
         { 
 			ArrayList<ReturnFormat> arr = new ArrayList<ReturnFormat>();
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/sahib_database?" +
-				                                   "user=root&password=sahib4sahib");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://sql12.freesqldatabase.com/sql12297834?" +
+	                "user=sql12297834&password=yrYdDq1PXY");
 			
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery("select * from users");
@@ -60,8 +60,8 @@ public class UserController {
 	public String postUsers(@RequestBody RequestFormat req) {
 		System.out.println(req);
 		try {
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/sahib_database?" +
-	                "user=root&password=sahib4sahib");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://sql12.freesqldatabase.com/sql12297834?" +
+	                "user=sql12297834&password=yrYdDq1PXY");
 			
 			Statement stmt = conn.createStatement();
 			stmt.executeUpdate("insert into users values('" + req.id + "','" + req.firstname
@@ -79,8 +79,8 @@ public class UserController {
 	public String updateUsers(@RequestBody RequestFormat req) {
 		System.out.println(req);
 		try {
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/sahib_database?" +
-	                "user=root&password=sahib4sahib");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://sql12.freesqldatabase.com/sql12297834?" +
+	                "user=sql12297834&password=yrYdDq1PXY");
 			
 			Statement stmt = conn.createStatement();
 			
@@ -102,8 +102,8 @@ public class UserController {
 	public String deleteUsers(@RequestBody RequestFormat req) {
 		System.out.println(req);
 		try {
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/sahib_database?" +
-	                "user=root&password=sahib4sahib");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://sql12.freesqldatabase.com/sql12297834?" +
+	                "user=sql12297834&password=yrYdDq1PXY");
 			
 			Statement stmt = conn.createStatement();
 			
